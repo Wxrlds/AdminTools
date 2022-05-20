@@ -10,6 +10,6 @@ winegecustomurl=`curl -s https://api.github.com/repos/GloriousEggroll/wine-ge-cu
 echo "Downloading Wine-GE-Custom"
 wget $winegecustomurl -c -P ~/Downloads --show-progress
 echo "Extracting Wine-GE-Custom"
-tar -xvf wine-lutris-GE*.tar.xz
-rm wine-lutris-GE*.tar.xz
-mv lutris-GE-* ~/.local/share/lutris/runners/wine
+tar -xvf ~/Downloads/wine-lutris-GE*.tar.xz
+rm ~/Downloads/wine-lutris-GE*.tar.xz
+mv ~/Downloads/lutris-GE-* ~/.local/share/lutris/runners/wine
