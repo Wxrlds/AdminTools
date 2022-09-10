@@ -1,2 +1,2 @@
-# FedoraSetupScripts
-A collection of useful scripts to execute when first installing Fedora Linux
+# OSSetupTools
+A collection of useful scripts for Fedora Linux and Windows
