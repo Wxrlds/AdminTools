@@ -1,11 +1,6 @@
-##################################################
-## https://github.com/Wxrlds/FedoraSetupScripts ##
-##################################################
+############################################
+## https://github.com/Wxrlds/OSSetupTools ##
+############################################
 
-clear
-echo "Proceeding to update the system. Press any key to continue."
-read -rsn1
-echo "Updating the system."
+# Update System
 sudo dnf upgrade
-echo "Successfully updated the system. Press any key to continue."
-read -rsn1

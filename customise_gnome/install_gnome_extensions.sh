@@ -1,10 +1,6 @@
-##################################################
-## https://github.com/Wxrlds/FedoraSetupScripts ##
-##################################################
+############################################
+## https://github.com/Wxrlds/OSSetupTools ##
+############################################
 
-clear
-echo "Proceeding to install Gnome Extensions. Press any key to continue."
-read -rsn1
+# Gnome Extensions
 sudo dnf install gnome-extensions-app
-echo "Installed Gnome Extensions. Press any key to continue."
-read -rsn1

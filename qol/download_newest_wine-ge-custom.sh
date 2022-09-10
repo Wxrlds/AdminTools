@@ -1,10 +1,9 @@
-##################################################
-## https://github.com/Wxrlds/FedoraSetupScripts ##
+############################################
+## https://github.com/Wxrlds/OSSetupTools ##
 ################################################################
 ## https://github.com/GloriousEggroll/wine-ge-custom/releases ##
 ################################################################
-echo "Proceeding to download newest Wine-GE-Custom by GloriousEggroll and moving it to the Lutris directory. Press any key to continue."
-read -rsn1
+# Download Wine-GE-Custom by GloriousEggroll and move it to Lutris directory
 echo "Getting Wine-GE-Custom download URL"
 winegecustomurl=`curl -s https://api.github.com/repos/GloriousEggroll/wine-ge-custom/releases/latest | grep "browser_download_url.*tar.xz" | cut -d : -f 2,3 | tr -d \" `
 echo "Downloading Wine-GE-Custom"
