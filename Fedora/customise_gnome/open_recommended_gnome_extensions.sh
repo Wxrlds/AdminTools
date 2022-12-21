@@ -7,7 +7,7 @@ xdg-open https://addons.mozilla.org/en-GB/firefox/addon/gnome-shell-integration/
 echo "Confirm you have installed the Gnome Shell integration addon. Press any key to continue."
 read -rsn1
 echo "Please install (and configure) following extensions"
-xdg-open https://extensions.gnome.org/extension/3499/application-volume-mixer/
+xdg-open https://extensions.gnome.org/extension/5446/quick-settings-tweaker/
 xdg-open https://extensions.gnome.org/extension/3193/blur-my-shell/
 xdg-open https://extensions.gnome.org/extension/4839/clipboard-history/
 xdg-open https://extensions.gnome.org/extension/2087/desktop-icons-ng-ding/
