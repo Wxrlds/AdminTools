@@ -1,14 +1,21 @@
-﻿; ############################################
-; ## https://github.com/Wxrlds/OSSetupTools ##
-; ############################################
+﻿; ##########################################
+; ## https://github.com/Wxrlds/AdminTools ##
+; ##########################################
 
-#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
-; #Warn  ; Enable warnings to assist with detecting common errors.
-SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
-SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+#Requires AutoHotkey v2.0
 
-; Press super key + scrolling up or down
-LWin & WheelDown:: Send ^#{Right}
-return
-LWin & WheelUp:: Send ^#{Left}
-return
+LWin & WheelDown:: {
+    Try {
+        WinActivate("ahk_class Shell_TrayWnd")
+    }
+    Send("^#{Right}")
+    return
+}
+
+LWin & WheelUp:: {
+    Try {
+        WinActivate("ahk_class Shell_TrayWnd")
+    }
+    Send("^#{Left}")
+    return
+}
