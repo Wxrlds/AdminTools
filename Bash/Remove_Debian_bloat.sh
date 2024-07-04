@@ -1,0 +1,2 @@
+sudo apt remove libreoffice* rhythmbox gnome-chess gnome-contacts gnome-weather gnome-2048 gnome-maps aisleriot five-or-more four-in-a-row hitori totem gnome-klotski lightsoff gnome-mahjongg cheese eog gnome-characters gnome-font-viewer chrome-gnome-shell firefox-esr gnome-mines gnome-music gnome-nibbles quadrapassel iagno gnome-robots shotwell gnome-sound-recorder gnome-sudoku swell-foop tali gnome-taquin gnome-tetravex transmission-gtk gnome-calendar gnome-clocks gnome-calculator simple-scan evince evolution
+sudo apt autoremove 

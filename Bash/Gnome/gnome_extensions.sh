@@ -1,0 +1,8 @@
+xdg-open "https://extensions.gnome.org/extension/615/appindicator-support/"
+xdg-open "https://extensions.gnome.org/extension/3193/blur-my-shell/"
+xdg-open "https://extensions.gnome.org/extension/4839/clipboard-history/"
+xdg-open "https://extensions.gnome.org/extension/28/gtile/"
+xdg-open "https://extensions.gnome.org/extension/545/hide-top-bar/"
+xdg-open "https://extensions.gnome.org/extension/277/impatience/"
+xdg-open "https://extensions.gnome.org/extension/5446/quick-settings-tweaker/"
+xdg-open "https://extensions.gnome.org/extension/1007/window-is-ready-notification-remover/"
