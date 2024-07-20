@@ -145,7 +145,7 @@ function Search-Group {
     if ($cn) {
         $propertyList += @{n = 'CN'; e = { $_.canonicalname -replace '(.*/).*', '$1' } }
     }
-    Get-ADObject -Filter { objectclass -like "group" -and name -like $group -or samaccountname -like $group } -Properties * | Select-Object -Property $propertyList
+    Get-ADGroup -Filter { name -like $group -or samaccountname -like $group } -Properties * | Select-Object -Property $propertyList
 }
 
 function Search-User {
@@ -167,4 +167,31 @@ function Search-User {
         $propertyList += @{n = 'CN'; e = { $_.canonicalname -replace '(.*/).*', '$1' } }
     }
     Get-ADUser -Filter { name -like $username -or samaccountname -like $username -or mail -like $username } -Properties * | Select-Object -Property $propertyList
+}
+
+# Open nvim in WSL instead of native Windows
+function nvim {
+    param(
+        [Parameter(Mandatory = $false)][string]$path,
+        [Parameter(Mandatory = $false, ValueFromRemainingArguments = $true)][string]$switches
+    )
+
+    if ($path) {
+        $path = (Get-ChildItem $path).FullName
+        $path = $path -replace '([A-Za-z]):', { '/mnt/' + $_.Groups[1].Value.ToLower() }
+        $path = $path -replace '\\', '/'
+    }
+
+    if ($path -and !$switches) {
+        wsl nvim $path
+    } elseif ($path -and $switches) {
+        wsl nvim $path $switches
+    } else {
+        wsl nvim $switches
+    }
+}
+
+# Open native nvim
+function wnvim {
+    nvim.exe $args
 }

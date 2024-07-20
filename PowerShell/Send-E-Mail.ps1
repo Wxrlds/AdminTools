@@ -1,7 +1,3 @@
-##########################################
-## https://github.com/Wxrlds/AdminTools ##
-##########################################
-
 # Requires:
 # https://github.com/EvotecIT/Mailozaurr
 
